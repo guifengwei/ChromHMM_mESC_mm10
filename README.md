@@ -38,7 +38,7 @@ There are many poteinal applications with the Chromatin States Map.
 java -mx4000M -jar ChromHMM.jar OverlapEnrichment mESC_E14_12_segments.bed.gz
 ```
 
-2. You can load (mESC_E14_12_dense.annotated.bed) in the folder to your UCSC Genome Browser. Then you can browse your interest genomic regions or genes to see the around chromatin landscape. Here are some examples (the attached PDF file within this folder).
+2. You can upload (mESC_E14_12_dense.annotated.bed) into your UCSC Genome Browser. Then you can browse your interest genomic regions or genes to see the around chromatin landscape. Here are some examples (the attached PDF file within this folder).
 
 3. If you want to apply CRISPR to knockout certein DNA element, you can check whether the DNA element you would like to delete is functional in mESC. 
 
