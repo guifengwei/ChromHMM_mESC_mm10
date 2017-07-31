@@ -18,10 +18,10 @@ The 12-state model contains the following states, mainly covering the promoter, 
 These were the following commands that were used to generate maps of chromatin states in mouse
 
 ```javascript
-java -mx4000M -jar ChromHMM.jar BinarizeBam ChromHMM/CHROMSIZES/mm10.txt .. cellmarkfiletable mESC_E14_BinarizeBamDir
+java -mx4000M -jar ChromHMM.jar BinarizeBam mm10.chromsize.txt .. cellmarkfiletable mESC_E14_BinarizeBamDir/
 ```
 ```javascript
-java -mx4000M -jar ChromHMM.jar LearnModel mESC_E14_BinarizeBamDir mESC_E14_ChromHMM_output 12 mm10
+java -mx4000M -jar ChromHMM.jar LearnModel mESC_E14_BinarizeBamDir/ mESC_E14_ChromHMM_output/ 12 mm10
 ```
 
 
