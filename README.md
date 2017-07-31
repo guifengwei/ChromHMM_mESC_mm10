@@ -17,11 +17,12 @@ The 12-state model contains the following states, mainly covering the promoter, 
 
 These were the following commands that were used to generate maps of chromatin states in mouse
 
-1. java -mx4000M -jar ~/Software/ChromHMM/ChromHMM.jar BinarizeBam ~/Software/ChromHMM/CHROMSIZES/mm10.txt .. cellmarkfiletable mESC_E14_BinarizeBamDir
-
-2. java -mx4000M -jar ~/Software/ChromHMM/ChromHMM.jar LearnModel mESC_E14_BinarizeBamDir mESC_E14_ChromHMM_output 12 mm10
-
-
+```javascript
+java -mx4000M -jar ~/Software/ChromHMM/ChromHMM.jar BinarizeBam ~/Software/ChromHMM/CHROMSIZES/mm10.txt .. cellmarkfiletable mESC_E14_BinarizeBamDir
+```
+```javascript
+java -mx4000M -jar ~/Software/ChromHMM/ChromHMM.jar LearnModel mESC_E14_BinarizeBamDir mESC_E14_ChromHMM_output 12 mm10
+```
 
 
 To interpret states, you can check this figure where I named each state with a specific color and indicated name: 
@@ -31,10 +32,15 @@ To interpret states, you can check this figure where I named each state with a s
 ##### Application:
 There are many poteinal applications with the Chromatin States Map.
 
-1. Annotate your ChIP-seq data to characterize which cis-elements in the mESC genome it prefer to occupy. You can use the command line (java -mx4000M -jar ~/Software/ChromHMM/ChromHMM.jar OverlapEnrichment) with specified parameters.
+1. Annotate your ChIP-seq data to characterize which cis-elements in the mESC genome it prefer to occupy. You can use the command line with specified parameters.
 
-2. You can load (mESC_E14_12_dense.annotated.bed) in the folder to your UCSC Genome Browser. Then you can browse your interest genomic regions or genes to see the around chromatin landscape. Here are some examples.
+```javascript
+java -mx4000M -jar ~/Software/ChromHMM/ChromHMM.jar OverlapEnrichment mESC_E14_12_segments.bed.gz
+```
 
+2. You can load (mESC_E14_12_dense.annotated.bed) in the folder to your UCSC Genome Browser. Then you can browse your interest genomic regions or genes to see the around chromatin landscape. Here are some examples (the attached PDF file within this folder).
+
+3. If you want to apply CRISPR to knockout certein DNA element, you can check whether the DNA element you would like to delete is functional in mESC. 
 
 ##### Acknowledgments:
 
