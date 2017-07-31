@@ -18,10 +18,10 @@ The 12-state model contains the following states, mainly covering the promoter, 
 These were the following commands that were used to generate maps of chromatin states in mouse
 
 ```javascript
-java -mx4000M -jar ~/Software/ChromHMM/ChromHMM.jar BinarizeBam ~/Software/ChromHMM/CHROMSIZES/mm10.txt .. cellmarkfiletable mESC_E14_BinarizeBamDir
+java -mx4000M -jar ChromHMM.jar BinarizeBam ~/Software/ChromHMM/CHROMSIZES/mm10.txt .. cellmarkfiletable mESC_E14_BinarizeBamDir
 ```
 ```javascript
-java -mx4000M -jar ~/Software/ChromHMM/ChromHMM.jar LearnModel mESC_E14_BinarizeBamDir mESC_E14_ChromHMM_output 12 mm10
+java -mx4000M -jar ChromHMM.jar LearnModel mESC_E14_BinarizeBamDir mESC_E14_ChromHMM_output 12 mm10
 ```
 
 
@@ -35,7 +35,7 @@ There are many poteinal applications with the Chromatin States Map.
 1. Annotate your ChIP-seq data to characterize which cis-elements in the mESC genome it prefer to occupy. You can use the command line with specified parameters.
 
 ```javascript
-java -mx4000M -jar ~/Software/ChromHMM/ChromHMM.jar OverlapEnrichment mESC_E14_12_segments.bed.gz
+java -mx4000M -jar ChromHMM.jar OverlapEnrichment mESC_E14_12_segments.bed.gz
 ```
 
 2. You can load (mESC_E14_12_dense.annotated.bed) in the folder to your UCSC Genome Browser. Then you can browse your interest genomic regions or genes to see the around chromatin landscape. Here are some examples (the attached PDF file within this folder).
