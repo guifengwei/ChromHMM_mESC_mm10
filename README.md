@@ -30,7 +30,7 @@ To interpret states, you can check this figure where I named each state with a s
 ![chromhmm12states](https://user-images.githubusercontent.com/1979180/28782415-f13ad6bc-7604-11e7-815e-5d19ee39d54e.jpg)
 
 ##### Application:
-There are many poteinal applications with the Chromatin States Map.
+There are many potential applications with the Chromatin States Map.
 
 1. Annotate your ChIP-seq data to characterize which cis-elements in the mESC genome it prefer to occupy. You can use the command line with specified parameters.
 
