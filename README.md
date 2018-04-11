@@ -42,6 +42,9 @@ java -mx4000M -jar ChromHMM.jar OverlapEnrichment mESC_E14_12_segments.bed.gz
 
 3. If you want to apply CRISPR to knockout certein DNA element, you can check whether the DNA element you would like to delete is functional in mESC. 
 
+##### Please Cite:
+Pintacuda G.*, Wei G.*, Roustan C., Kirmitzas B.A., Solcan N., Cerase A., Castello A., Mohammed S., Moindrot B., Nesterova T.B. and Brockdorff N. (2017) hnRNPK Recruits PCGF3/5-PRC1 to the Xist RNA B-Repeat to Establish Polycomb-Mediated Chromosomal Silencing. Molecular Cell, 68, 955-969 e10.
+
 ##### Acknowledgments:
 
 ######  Jason Ernst http://www.biolchem.ucla.edu/labs/ernst/
